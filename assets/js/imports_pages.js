@@ -17,25 +17,25 @@ fetch('./footer.html')
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Menu mobile toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const menuPrincipal = document.getElementById('menu_principal');
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Menu mobile toggle
+//     const menuToggle = document.getElementById('menu-toggle');
+//     const menuPrincipal = document.getElementById('menu_principal');
     
-    if (menuToggle && menuPrincipal) {
-        menuToggle.addEventListener('click', function() {
-            menuPrincipal.classList.toggle('active');
-        });
-    }
+//     if (menuToggle && menuPrincipal) {
+//         menuToggle.addEventListener('click', function() {
+//             menuPrincipal.classList.toggle('active');
+//         });
+//     }
     
-    // Detectar página atual para destacar no menu
-    const currentPage = window.location.pathname.split('/').pop();
-    const navLinks = document.querySelectorAll('.nav-link');
+//     // Detectar página atual para destacar no menu
+//     const currentPage = window.location.pathname.split('/').pop();
+//     const navLinks = document.querySelectorAll('.nav-link');
     
-    navLinks.forEach(link => {
-        const href = link.getAttribute('href').split('/').pop();
-        if (href === currentPage) {
-            link.classList.add('active');
-        }
-    });
-});
+//     navLinks.forEach(link => {
+//         const href = link.getAttribute('href').split('/').pop();
+//         if (href === currentPage) {
+//             link.classList.add('active');
+//         }
+//     });
+// });
